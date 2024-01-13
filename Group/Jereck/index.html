@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Jereck Orenia</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/forms.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="page-header"><strong>Jereck Orenia</strong></h1>
+        <nav class="topnav" id="myTopnav">
+            <a href="../../index.html" class="active">Home</a>
+            <a href="https://jorenia.github.io/stylin-with-css-fl23/" target="_blank">Stylin with CSS</a>
+            <a href="https://jorenia.github.io/explore-oregon/" target="_blank">explore-oregon</a>
+            <a href="https://github.com/JOrenia" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/jereck-orenia-a13a68296/" target="_blank">LinkedIn</a>
+            <a href="https://jorenia.github.io/selectors-Jereck-FL23/" target="_blank">Selectors</a>
+            <a href="https://jorenia.github.io/css-positioning/" target="_blank">Positioning</a>
+            <a href="https://jorenia.github.io/time-of-day-JO/" target="_blank">Time-Of-Day</a>
+            <a href="https://jorenia.github.io/daily-grind-JO/" target="_blank">Daily Grind</a>
+            <a href="https://jorenia.github.io/creatures_JO/" target="_blank">Creatures</a>
+            <a href="https://jorenia.github.io/form-processing-JO/ " target="_blank">Form Processing</a>
+            <a href="https://jorenia.github.io/dom-play-JO/" target="_blank">Dom-Play</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        </nav>
+    </header>
+
+    <main class="wrapper">
+        <picture class="profile">
+            <source media="(min-width: 1200px)" srcset="images/tiki.jpg">
+            <source media="(min-width: 501px)" srcset="images/Jereck_spiderman.jpg">
+            <img src="images/japan.jpg" alt="That's me!">
+        </picture>
+        <h2 class="subheader">About Me</h2>
+
+        <p>My name is Jereck Orenia, and I'm currently enrolled at Seattle Central College through the Year Up program.
+            With a passion for everything tech-related and an insatiable curiosity that fuels my quest for knowledge,
+            I'm on the path to becoming a software developer in test. While I'm dedicated to my studies, I'm also
+            currently serving as an assistant general manager at the Lakewood Racquet and Sports Club. In this role, I
+            assist with various administrative tasks, including scheduling, consulting, website management, financials,
+            and member relations.</p>
+            
+        <p>In my free time, you'll often find me absorbed in my many hobbies and activities. I'm an avid tennis player
+            with over a decade of experience, and I aspire to share the joy of tennis with others. My love for tinkering
+            with all things tech is a driving force behind my pursuit of a career as a software developer. Additionally,
+            I'm an aspiring photographer, that loves to capture moments that will be cherished forever. You can follow
+            my photographic journey on my personal Instagram page, where I share glimpses of my everyday life.</p>
+
+        <p>As I continue to progress on my journey towards becoming a software developer and tester, I hope to continue
+            to form new connections and create new memories along the way.</p>
+
+
+        <footer>
+            <p><small>&copy; 2021-<span id="this-year"></span> by
+                    Jereck Orenia, All Rights Reserved ~
+                    <a id="html-checker" href="#" target="_blank">Check HTML</a> ~
+                    <a id="css-checker" href="#" target="_blank">Check CSS</a></small>
+            </p>
+        </footer>
+    </main>
+
+    <!-- Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon -->
+    <script>
+        //https://tinyurl.com/dynamic-html-checker
+        document.getElementById("html-checker").setAttribute("href", "https://validator.w3.org/nu/?doc=" + location.href);
+
+        document.getElementById("css-checker").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+
+        //set current year in span with id of this-year
+        let d = new Date(); let thisYear = d.getFullYear();
+        document.getElementById("this-year").innerHTML = thisYear;
+
+        //manages mobile nav 
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }   
+    </script>
+
+</body>
+
+</html>
