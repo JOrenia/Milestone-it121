@@ -1,0 +1,147 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Julie Saelee</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/forms.css">
+</head>
+
+<body>
+  <header>
+    <h1 class="page-header">Julie Saelee</h1>
+    <nav class="topnav" id="myTopnav">
+      <a href="../../index.html" class="active">Home</a>
+      <a href="https://github.com/julsae/" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/juliesaelee/" target="_blank">LinkedIn</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </nav>
+  </header>
+
+  <main class="wrapper">
+    <picture class="profile">
+      <img src="images/desktop.jpg" alt="That's me!">
+    </picture>
+    <h2 class="subheader">About Me</h2>
+
+    <p>
+      Hello! My name is Julie Saelee and I am a Quality Assurance Class 26 Student of Year Up! I am excited to be
+      learning about web development and JavaScript, as this will be useful for my career in quality assurance. I'm
+      hoping to apply these skills to a project management or software engineering role.
+    </p>
+    <p>
+      When I'm not in class, studying and doing homework, or working, I like to take my dog out on scenic walks through
+      local trails and practice some photography. I'm a bit rusty as it has been years since I've picked up a digital
+      camera but the fall season is especially inspiring to me when it comes to content creation. I recently purchased a
+      lightly used Panasonc LUMIX DMC-ZS19 (it's a bit old fashioned, I know), but that is the aesthetic I'm aiming for
+      with my photography style.
+    </p>
+
+    <blockquote>
+      <br>
+      <hr>
+    </blockquote>
+
+    <h2 class="subheader">My Hobbies</h2>
+
+    <p>
+      Among photography, I have a variety of other hobbies as well. I'm no pro photographer, but when I see something
+      picturesque, I will be whipping out either my phone or camera to capture the moment.
+    </p>
+    <picture class="photography">
+      <img src="images/photography.jpg">
+    </picture>
+
+    <blockquote>
+      <br>
+      <table cellspacing="10">
+        <tr>
+          <td>
+            <img src="images/rollerskating.jpg">
+          </td>
+          <td>
+            <p>
+              I love rollerskating! You can go with friends or go solo. Regardless, once I get a good playlist going or
+              if there's a good DJ in the booth, I am in the zone. It's amazing cardio, it's fun, and there's also a
+              great rollerskating community.
+            </p>
+          </td>
+        </tr>
+      </table>
+    </blockquote>
+
+    <blockquote>
+      <br>
+      <table cellspacing="10">
+        <tr>
+          <td>
+            <img src="images/cooking.jpg">
+          </td>
+          <td>
+            <p>
+              My mother taught me the basics of cooking at a young age and I often watched the Food Network Channel
+              growing up because I didn't always have cable, but I always had Food Network; through that, I've always
+              had a knack for cooking. It was something that was a chore then became a hobby because I love creating
+              things.
+            </p>
+          </td>
+        </tr>
+      </table>
+    </blockquote>
+
+    <blockquote>
+      <br>
+      <table cellspacing="10">
+        <tr>
+          <td>
+            <img src="images/watercolor.jpg">
+          </td>
+          <td>
+            <p>
+              I haven't painted in a while, but I'm hoping once school is done, I can get into a new hobby (learning
+              bass guitar) and get into a old hobby. Watercolor painting is a relaxing activity for me as it is a
+              creative outlet to express myself freely.
+            </p>
+          </td>
+        </tr>
+      </table>
+    </blockquote>
+
+    <footer>
+      <p><small>&copy; 2021-<span id="this-year"></span> by
+          JULIE SAELEE, All Rights Reserved ~
+          <a id="html-checker" href="#" target="_blank">Check HTML</a> ~
+          <a id="css-checker" href="#" target="_blank">Check CSS</a></small>
+      </p>
+    </footer>
+  </main>
+
+  <!-- Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon -->
+  <script>
+    //https://tinyurl.com/dynamic-html-checker
+    document.getElementById("html-checker").setAttribute("href", "https://validator.w3.org/nu/?doc=" + location.href);
+
+    document.getElementById("css-checker").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+
+    //set current year in span with id of this-year
+    let d = new Date(); let thisYear = d.getFullYear();
+    document.getElementById("this-year").innerHTML = thisYear;
+
+    //manages mobile nav 
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }   
+  </script>
+
+</body>
+
+</html>

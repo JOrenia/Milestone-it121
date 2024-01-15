@@ -1,0 +1,99 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- this is where and how the files/folders of main, nav and forms of the css folder are connected to this html file -->
+      <title>Katie Le</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <link rel="stylesheet" href="css/main.css">
+      <link rel="stylesheet" href="css/nav.css">
+      <link rel="stylesheet" href="css/forms.css">
+  </head>
+<body>
+   <header>
+     <!-- links to home/index, github, and linkedin in the navigation -->
+        <nav class="topnav" id="myTopnav">
+          <a href="../../index.html" class="active">Home</a>
+          <a href="https://github.com/katiethile" target="_blank">GitHub</a>
+          <a href="https://www.linkedin.com/in/katie-le-5b637720b/" target="_blank">LinkedIn</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+      </nav>
+   </header>
+
+  <main class="wrapper">
+    <picture class="profile">
+       <h1 class="subheader">All about Katie Le</h1>
+    <p class="contact">Contact me at: Kle000@sea.yearup.org</p>
+      <!-- creating an element for my personal image to appear -->
+    <img src="images/IMG_0220.jpg" alt="Katie Le">
+    </picture>
+    <!-- using the p tag for my intro/about me and section out each paragraphs -->
+     <p>My name is Katie Le. I am currently in the Year Up program at Seattle Central, in the QA track of class 26. Through this program in this track, we were able to learn computer languages such as Python, JS, Java, HTML, CSS, and other electives throughout the course. Before this, I also attended a bootcamp online at Flatiron in 2021, so I was familiar with some of the computer languages already. Before the bootcamp, I had gotten my AA at Seattle Central, not knowing what I'd like to major in. I've tried to major in Dental Hygiene, but soon realized it wasn't of my interest. And also the same for radiology. I soon found out about this program accepting ages up to 29, so I finally went for it after much debate, and here I am now.</p>
+
+       <p>I am a foodie. I love exploring new restaurants. I am even working at a thai restaurant part time at the moment while attending this program. I also enjoy eating sweets and I love drinking bubble tea. If I can eat a certain food for a lifetime, I would choose to eat sushi; It is just too good. I am also a Yelp Elite for the past 4 years now. My mood is greatly affected by food; for example, if what I had ordered was not good, it will ruin my mood for the whole day, thinking it is a waste of money.</p>
+
+       <p>I am also really into K-Pop. I can say that K-pop is what makes me, me. I have been following K-pop since 2006 until  now, and K-pop is all I really enjoy listening too, besides C-Pop, J-Pop, V-pop, etc. I enjoy a variety of music, but K-pop greatly impacts me as a whole, even my personality. I also for this reason, have gotten into watching a lot of korean dramas. It just feels different compared to American shows, like I can connect to them better. My goal is to visit Korea one day; it has been on my bucketlist for a while. Anime is also what I have been into since a while back as well, around the same time as I got into K-Pop. Due to enjoy watching anime, at one point I have taken an interest in drawing the same art style, though it was not successful.</p>
+
+       <p>I have a goal for the future. Of course, the goal is to have financial stability, as I have struggled all my life with financial stability. After acheiving that, I want to travel around the world. And the final goal is to financially provide for my parents. That is the ultimate goal. </p>
+
+    <h2>Hobbies</h2>
+    <p>Honestly, when I was thinking about my hobbies, it was quite hard for me to think of some. I am not particularly great at anything. But a few of my hobbies are binge watching K-Dramas, animes, and I recently got into making perlers. I am able to binge watch a 16hr drama within 1-2 days. Name a drama and anime, I'd probably know it.Below are a list of K-Dramas that I've watched and reccomend:</p>
+
+    <!-- creating a list within a div with my favorite K-dramas -->
+    <div>
+      <li>Blood Hounds</li>
+      <li>Winter Sonata</li>
+      <li>Sweet Home 1</li>
+      <li>My Demon</li>
+      <li>The Beauty Inside</li>
+    </div>
+
+<p>Below is a list of animes I've watched and recommend:</p>
+
+    <!-- creating a list of my favorite animes within a div -->
+    <div>
+      <li>Plastic Memories</li>
+      <li>Jujutsu Kaisen</li>
+      <li>Demon Slayer</li>
+      <li>Inuyasha</li>
+      <li>Angel Beats</li>
+    </div>
+
+    <p>You're probably thinking, "What are perlers?" Well, perlers are basically colored beads put together to be a design that you want, placing them together one by one, on a board, then heating them together so that they stick together with the help of parchment paper, double sided tape and an iron. You go over the beads with the parchment paper on top with the iron on medium heat until you see that the beads stick to the paper, then flip it over and do the same to the other side. A piece that I made for my S/O is a big Squirtle and a mini Squirtle; the mini one, he ended up using on his backpack. Here is what they look like:</p>
+
+    <img class="ss" src="images/IMG_5262.jpeg" alt="Squirtle1" width="700" height="700">
+    <img class="ss" src="images/IMG_5379.jpeg" alt="Squirtle2" width="700" height="700">
+    <img class="ss" src="images/IMG_5382.jpeg" alt="Squirtle3" width="700" height="700">
+    <img class="ss" src="images/IMG_1111.jpeg" alt="Squirtle4" width="700" height="700">
+   <footer>
+         <p><small>&copy; 2024-<span id="this-year"></span> by 
+             KATIE T. LE, All Rights Reserved ~ 
+           <a id="html-checker" href="#" target="_blank">Check HTML</a> ~ 
+           <a id="css-checker" href="#" target="_blank">Check CSS</a></small>
+        </p>
+       </footer>
+     </main>
+     <!-- Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon -->
+   <script>
+      //https://tinyurl.com/dynamic-html-checker
+      document.getElementById("html-checker").setAttribute("href","https://validator.w3.org/nu/?doc=" + location.href);
+
+      document.getElementById("css-checker").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href); 
+
+       //set current year in span with id of this-year
+       let d = new Date(); let thisYear = d.getFullYear();
+       document.getElementById("this-year").innerHTML = thisYear;
+
+      //manages mobile nav 
+      function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+              x.className += " responsive";
+          } else {
+              x.className = "topnav";
+          }
+      }   
+   </script>
+</body>
+</html>
