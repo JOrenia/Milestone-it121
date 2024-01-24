@@ -10,4 +10,4 @@
 
 <h4>HOW TO GET</h4>
 
-<p>To get all of the code files from this project, simply git clone the whole prject onto your IDE and it should be available to you.</p>
+<p>To get all of the code files from this project, simply git clone the whole project onto your IDE and it should be available to you.</p>
