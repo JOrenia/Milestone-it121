@@ -11,7 +11,16 @@ html {
 }
 
 h1 {
+<<<<<<< HEAD
   border: 1px solid black;
+=======
+  font-weight: normal;
+  margin: auto;
+  background: #f0fcff;
+  line-height: 2.5em;
+  width: 79%;
+  padding-left: 40%;
+>>>>>>> f75569f17e1bcb62d78118ca2e9dcbca293fa6be
 }
 
 h1.page-header {
