@@ -18,6 +18,7 @@ h1 {
     border-style: groove;
 }
 
+
 h1.page-header {
     font-family: 'Agbalumo', sans-serif;
 }
@@ -31,11 +32,15 @@ p {
     margin: 1em; /* Top Right Bottom Left (TRBL) */
 }
 
-h2,h3 {
+h2 {
     font-weight: normal;
     margin-right: 5%;
     line-height: 1em;
     border-style: groove;
+}
+
+h3 {
+    text-align: center;
 }
 
 a {
