@@ -1,89 +1,89 @@
 html {
-    background-color: lightcyan;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 0.95em;
-    line-height: 1.5em;
-  }
-  
-  ::selection {
-    color: #000;
-    background: #ff0;
-  }
-  
-  h1 {
-    font-weight: normal;
-    margin: auto;
-    background: #fff;
-    line-height: 2.5em;
-  }
-  
-  h1.page-header {
-    font-family: 'Agbalumo', sans-serif;
-  }
-  
+  background-color: #c7d8e5;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 0.95em;
+  line-height: 1.5em;
+}
+
+::selection {
+  color: #000;
+  background: #ff0;
+}
+
+h1 {
+  font-weight: normal;
+  margin: auto;
+  background: #f0fcff;
+  line-height: 2.5em;
+}
+
+h1.page-header {
+  font-family: 'Agbalumo', sans-serif;
+}
+
+main.wrapper {
+  background-color: white;
+  overflow: auto;
+}
+
+p {
+  margin: 1em;
+  /* Top Right Bottom Left (TRBL) */
+}
+
+h2,
+h3 {
+  font-weight: normal;
+  margin-left: 1em;
+  line-height: 1em;
+}
+
+a {
+  color: darkcyan;
+  text-decoration: none;
+}
+
+p.ss {
+  border-style: solid;
+}
+
+a:hover {
+  color: whitesmoke;
+  background-color: darkcyan;
+  text-decoration: none;
+}
+
+footer {
+  clear: both;
+  text-align: center;
+  padding: 1em;
+}
+
+/* Responsive rules */
+
+/* DESKTOP */
+@media all and (min-width:1200px) {
   main.wrapper {
-    background-color: white;
-    overflow: auto;
+    width: 80%;
+    margin: auto;
   }
-  
-  p {
-    margin: 1em;
-    /* Top Right Bottom Left (TRBL) */
-  }
-  
-  h2,
-  h3 {
-    font-weight: normal;
-    margin-left: 1em;
-    line-height: 1em;
-  }
-  
-  a {
-    color: darkcyan;
-    text-decoration: none;
-  }
-  
-  p.ss {
+
+  h1 {
+    width: 79%;
+    padding-left: 30%;
     border-style: solid;
   }
-  
-  a:hover {
-    color: whitesmoke;
-    background-color: darkcyan;
-    text-decoration: none;
+
+  h4 {
+    width: 79%;
+    padding-left: 40%;
   }
-  
-  footer {
-    clear: both;
-    text-align: center;
-    padding: 1em;
-  }
-  
-  /* Responsive rules */
-  
-  /* DESKTOP */
-  @media all and (min-width:1200px) {
-    main.wrapper {
-      width: 80%;
-      margin: auto;
-    }
-  
-    h1 {
-      width: 79%;
-      padding-left: 30%;
-      border-style: solid;
-    }
-  
-    h4 {
-      width: 79%;
-      padding-left: 40%;
-    }
-  }
-  
-  li {
-    float: left;
-    text-decoration: none;
-    padding: 5px;
-    list-style-type: none;
-    margin: 5em
-  }
+}
+
+li {
+  float: left;
+  text-decoration: none;
+  padding: 5px;
+  list-style-type: none;
+  margin: 5em
+}
