@@ -1,7 +1,9 @@
 /* Global rules */
 
+/*Importing font from google api*/
 @import url('https://fonts.googleapis.com/css?family=Quicksand|Spectral');
 
+/*Applying css styling to each elements*/
 html {
     background-color: lightgray;
     font-family: 'Quicksand', sans-serif;
@@ -81,7 +83,7 @@ footer {
 
 /* Responsive rules */
 
-/* DESKTOP */
+/* DESKTOP view styling*/
 @media all and (min-width:1200px) {
     main.wrapper {
         width: 80%;
