@@ -1,8 +1,10 @@
 /* Global rules */
 
+/*Importing font style from google api*/
 @import url('https://fonts.googleapis.com/css?family=Quicksand');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant&display=swap');
 
+/*Applying all css styling to each elements*/
 html {
   background-color: rgb(250, 237, 237);
   font-family: 'Quicksand', sans-serif;
@@ -62,7 +64,7 @@ footer {
 
 /* Responsive rules */
 
-/* DESKTOP */
+/* DESKTOP view styling*/
 @media all and (min-width:1200px) {
   main.wrapper {
     width: 80%;
@@ -82,7 +84,7 @@ footer {
 
 }
 
-/* TABLET */
+/* TABLET view styling*/
 @media all and (min-width:501px) and (max-width:1199px) {
   main.wrapper {
     width: 90%;
@@ -102,7 +104,7 @@ footer {
 
 }
 
-/* PHONE */
+/* PHONE view styling*/
 @media all and (max-width:500px) {
   main.wrapper {
     width: 100%;

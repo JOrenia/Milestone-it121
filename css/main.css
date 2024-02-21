@@ -1,7 +1,8 @@
 /* Global rules */
-
+/*Importing a font style from googleapi to apply to the index page*/
 @import url('https://fonts.googleapis.com/css?family=Quicksand');
 
+/*Here we are applying background colors, font style, font size and the height of the text. Similar styling rules will be applied to the rest of these elements.*/
 html {
     background-color: lightgray;
     font-family: 'Quicksand', sans-serif;
@@ -19,6 +20,7 @@ h1 {
     margin: auto;
     background: #fff;
     line-height: 2.5em;
+    font-style: Sixtyfour;
 }
 
 main.wrapper {
@@ -69,11 +71,13 @@ th {
     background-color: #d2a06d;
 }
 
+/*The styling for the radio button/ audio*/
 .audio {
     text-align: center;
     margin-top: 20px;
 }
 
+/*The styling for the Rate Us button*/
 .button-36 {
   background-image: linear-gradient(92.88deg, #4592b5 9.16%, #5643CC 43.89%, #813fd7 64.72%);
   border-radius: 8px;
@@ -114,7 +118,7 @@ footer {
 
 /* Responsive rules */
 
-/* DESKTOP */
+/* DESKTOP styling*/
 @media all and (min-width:1200px) {
     main.wrapper {
         width: 80%;
@@ -134,7 +138,7 @@ footer {
     
 }
 
-/* TABLET */
+/* TABLET view styling*/
 @media all and (min-width:501px) and (max-width:1199px) {
     main.wrapper {
         width: 90%;
@@ -154,7 +158,7 @@ footer {
 
 }
 
-/* PHONE */
+/* PHONE view styling*/
 @media all and (max-width:500px) {
     main.wrapper {
         width: 100%;

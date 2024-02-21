@@ -1,9 +1,9 @@
 /* Global rules */
-
+/*Importing fonts from google api*/
 @import url('https://fonts.googleapis.com/css?family=Quicksand');
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Manrope&family=Montserrat:wght@300&family=Nunito:wght@300&display=swap');
 
-
+/*Applying css styling to each elements*/
 html {
     background-color: #1c1e1f;
     font-family: 'Nunito', sans-serif;
@@ -63,7 +63,7 @@ footer {
 
 /* Responsive rules */
 
-/* DESKTOP */
+/* DESKTOP view styling*/
 @media all and (min-width:1200px) {
     main.wrapper {
         width: 80%;
@@ -83,7 +83,7 @@ footer {
     
 }
 
-/* TABLET */
+/* TABLET view styling*/
 @media all and (min-width:501px) and (max-width:1199px) {
     main.wrapper {
         width: 90%;
@@ -103,7 +103,7 @@ footer {
 
 }
 
-/* PHONE */
+/* PHONE view styling*/
 @media all and (max-width:500px) {
     main.wrapper {
         width: 100%;
