@@ -244,11 +244,6 @@ th {
     gap: 2rem; /* Add some space between stacked cards */
   }
 }
-
-.clock-border {
-  
-}
-
 .clock {
   display: flex; 
   justify-content: center; 
@@ -272,4 +267,10 @@ th {
   user-select: none;
   -webkit-user-select: none;
 
+}
+
+#map {
+  width: 60rem;
+  height: 60rem;
+  border-radius: 35em;
 }

@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="nav.css" />
+     <!-- Include jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Include Google Maps JavaScript API with your API key -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARyaKTUxBldfUB_deQ4xLta2nMPdoYe1I&callback=initMap" async defer></script>
   </head>
   <body class="wrapper">
     <header class="title">
@@ -22,8 +26,7 @@
           <a href="Group/Jereck/index.html" class="active">Jereck</a>
           <a href="Group/Closing/closing.html" class="active">Closing</a>
           <a href="javascript:void(0);" class="icon" onclick="toggleNav()"
-            >&#9776;</a
-          >
+            >&#9776;</a>
         </div>
       </nav>
     </header>
@@ -43,6 +46,9 @@
           <source src="mp3/lofi.mp3" type="audio/mp3" />
         </audio>
       </div>
+
+      <div id="map"></div>
+
       <h2>CountDown til Internships!</h1>
       <div class="clock-border">
         <div class="clock">
