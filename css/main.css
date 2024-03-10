@@ -1,34 +1,43 @@
+/* Bootstrap Navbar */
+.navbar-nav .nav-link:hover {
+  color: #828ba3; 
+}
+
+.bg-light {
+  background-color: #c2f5e7 !important;
+}
+
+.navbar-collapse {
+  width: 2%;
+}
+
 html {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(96, 59, 215);
   font-family: 'Quicksand', 'sans-serif';
   font-size: 0.95em;
   line-height: 1.5em;
 }
 
-
-body.wrapper {
+.wrapper {
   background-color: rgb(255, 255, 255);
 }
 
 header img {
   width: auto;
-  height: 6vh;
+  height: 5vh;
 }
 
 header{
-  display: flex;
-  justify-content: space-between;
-  background-color: 	#c2f5e7;
-  align-items: center; 
-  padding: 0 2rem;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  border-top-left-radius: 1px;
+  border-top-right-radius: 1px;
+  width: 80%;
+
 }
 
 main.wrapper {
   background-color: rgb(168, 209, 167);
   overflow: auto;
-  padding: 0 2rem;
+  width: 80%;
 }
 
 body {
@@ -37,10 +46,27 @@ body {
   line-height: 1.5em;
 }
 
+#one {
+  width: 100%;
+  background-color: rgb(142, 178, 142);
+}
+
+h4 {
+  margin-top: 2em;
+}
+
+#map {
+  margin-top: 2rem;
+  width: 50rem;
+  height: 50rem;
+  border-radius: 29em;
+}
+
 h1 {
   font-family:inherit;
   font-size: 60px;
 }
+
 .center {
   display: flex;
   align-items: center;
@@ -112,6 +138,8 @@ a:active {
   color: azure;
 }
 
+
+
 #content h1 {
   margin: 30px 0px 40px;
 }
@@ -160,13 +188,13 @@ ul {
 }
 
 .table-container {
-  width: 30%; /* Set a fixed width for the container */
+  width: 30%; 
   border-radius: 5px;
   overflow: hidden;
 }
 .table {
-  border-radius: 10px; /* Adjust the radius value as needed */
-  overflow: hidden; /* Ensures that the rounded corners are visible */
+  border-radius: 10px; 
+  overflow: hidden; 
 }
 table {
   width: 100%;
@@ -190,64 +218,6 @@ th {
 .rate {
   display: flex;
 }
-
-/* DESKTOP */
-@media all and (min-width:1200px) {
-  header {
-    width: 90%;
-    margin: auto;
-  }
-
-  main.wrapper {
-    width: 90%;
-    margin: auto;
-  }
-  
-  h1 {
-    width: 100%;
-  }
-  
-  section #content {
-    width: 100%;
-    float: left;
-    margin-right: 2em;
-  }
-  
-}
-
-/* TABLET */
-@media all and (min-width: 768px) and (max-width: 1199px) {
-  /* Your existing tablet styles */
-
-  .center {
-    display: flex; /* Display navigation links as block elements */
-    text-align: center; /* Center-align the navigation links */
-  }
-
-  main.wrapper {
-    width: 90%;
-    margin: auto;
-  }
-
-  .header a {
-    display: inline-block; /* Display navigation links as inline-block */
-    padding: 5px; /* Add padding to the navigation links */
-    text-decoration: none; /* Remove underline from the navigation links */
-    color: #565E6CFF; /* Set text color for navigation links */
-  }
-
-  .icon {
-    display: none; /* Hide the navigation toggle icon */
-  }
-
-
-  .card-container {
-    flex-direction: column; /* Stack cards vertically */
-    align-items: center; /* Center cards horizontally */
-    gap: 2rem; /* Add some space between stacked cards */
-  }
-}
-
 
 .clock {
   display: flex; 
@@ -274,8 +244,31 @@ th {
 
 }
 
-#map {
-  width: 60rem;
-  height: 60rem;
-  border-radius: 35em;
+
+
+/* TABLET */
+@media all and (min-width: 768px) and (max-width: 1200px) {
+  header{
+    border-top-left-radius: 1px;
+    border-top-right-radius: 1px;
+    width: 90%;
+  
+  }
+
+  .center {
+    display: flex; 
+    text-align: center; 
+  }
+
+  main.wrapper {
+    width: 90%;
+    margin: auto;
+  }
+
+  .card-container {
+    flex-direction: column;
+    align-items: center; 
+    gap: 2rem; 
+  }
 }
+

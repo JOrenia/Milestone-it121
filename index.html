@@ -4,6 +4,8 @@
     <title>IT 121 Milestone</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css"/>
   <!-- Include jQuery -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -12,28 +14,46 @@
   </head>
   <body class="wrapper">
     <header class="title">
-      <div class="left">
-        <img src="images/hobby.png" alt="Hobbies" />
-      </div>
-      <!--This section allow us to have a topnav to link us to our own pages.-->
-      <nav class="header" id="navMenu">
-        <div class="center">
-          <a href="index.html" class="active">Home</a>
-          <a href="Group/Katie/index.html" class="active">Katie</a>
-          <a href="Group/Julie/index.html" class="active">Julie</a>
-          <a href="Group/Sarah/index.html" class="active">Sarah</a>
-          <a href="Group/Jereck/index.html" class="active">Jereck</a>
-          <a href="Group/Closing/closing.html" class="active">Closing</a>
-          <a href="javascript:void(0);" class="icon" onclick="toggleNav()"
-            >&#9776;</a>
+      <nav class="navbar navbar-expand-sm navbar-light bg-light">
+            <img src="images/hobby.png" alt="Hobbies">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Group/Katie/index.html">Katie</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Group/Julie/index.html">Julie</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Group/Sarah/index.html">Sarah</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Group/Jereck/index.html">Jereck</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Group/Closing/closing.html">Closing</a>
+                </li>
+            </ul>
         </div>
-      </nav>
+    </nav>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </header>
 
     <main class="wrapper">
+      <section id="one">
       <div class="about">
         <h1 class="">About Us</h1>
-        <p class="float-left">Welcome to our hobbies page!</p>
+        <h4 >Welcome to our hobbies page!</h4>
         <a href="Group/Closing/closing.html">
           <img
             class="yearup"
@@ -45,7 +65,10 @@
           <source src="mp3/Lofi.mp3" type="audio/mp3" />
         </audio>
       </div>
+    </section>
 
+    <section id="two">
+      <h4 class="central-map">Map to Seattle Central College</h4>
       <div id="map"></div>
 
       <h2>CountDown til Internships!</h2>
@@ -57,6 +80,7 @@
           <p id="secs"></p>
         </div>
       </div>
+    </section>
 
       <section id="content">
         <h2>Our Team</h2>
