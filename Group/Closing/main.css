@@ -27,14 +27,14 @@ h1 {
 /* Style the top navigation bar */
 .topnav {
   overflow: hidden;
-  background-color: #d4654a;
+  background-color: #e2634c;
 }
 
 /* Style the topnav links */
 .topnav a {
   float: left;
   display: block;
-  color: #d4664aa2;
+  color: #f7ec88;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -63,7 +63,6 @@ p {
 p.ss {
   border-style: solid;
 }
-
 
 
 footer {
