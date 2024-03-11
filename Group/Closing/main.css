@@ -64,17 +64,7 @@ p.ss {
   border-style: solid;
 }
 
-a {
-  color: darkcyan;
-  text-decoration: none;
-  margin: 56px;
-}
 
-a:hover {
-  color: whitesmoke;
-  background-color: darkcyan;
-  text-decoration: none;
-}
 
 footer {
   clear: both;
