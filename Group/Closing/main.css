@@ -27,14 +27,14 @@ h1 {
 /* Style the top navigation bar */
 .topnav {
   overflow: hidden;
-  background-color: #e2634c;
+  background-color: #e2af6b;
 }
 
 /* Style the topnav links */
 .topnav a {
   float: left;
   display: block;
-  color: #f7ec88;
+  color: #ddecc0;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -42,8 +42,8 @@ h1 {
 
 /* Change color on hover */
 .topnav a:hover {
-  background-color: #ecdbea;
-  color: rgb(104, 1, 104);
+  background-color: #dbe9ec;
+  color: #006f88;
 }
 
 h4 {
@@ -63,7 +63,6 @@ p {
 p.ss {
   border-style: solid;
 }
-
 
 footer {
   clear: both;
