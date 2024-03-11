@@ -1,13 +1,13 @@
 html {
-  background-color: #c7d8e5;
-  font-family: 'Quicksand', sans-serif;
+  background-color: linen;
+  font-family: 'Quicksand', 'sans-serif';
   font-size: 0.95em;
   line-height: 1.5em;
 }
 
 body {
-  font-family: Arial, sans-serif;
-  background-color: #c7d8e5;
+  font-family: 'Arial', 'sans-serif';
+  background-color: lavenderblush;
   color: #333;
   margin: 0;
   padding: 0;
@@ -16,10 +16,10 @@ body {
 
 h1 {
   border: 3px solid black;
-  background-color: #f0fcff;
+  background-color: lavenderblush;
   font-weight: bold;
   text-align: center;
-  color: #000000;
+  color: maroon;
   margin: 1em;
   padding: 0.5em;
   line-height: 2.5em;
