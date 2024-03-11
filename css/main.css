@@ -1,6 +1,6 @@
 /* Bootstrap Navbar */
 .navbar-nav .nav-link:hover {
-  color: #828ba3; 
+  color: #5d6270; 
 }
 
 .bg-light {
@@ -13,7 +13,7 @@
 
 html {
   background-color: rgb(96, 59, 215);
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Quicksand', 'sans-serif';
   font-size: 0.95em;
   line-height: 1.5em;
 }
@@ -27,17 +27,16 @@ header img {
   height: 5vh;
 }
 
-header {
+header{
   border-top-left-radius: 1px;
   border-top-right-radius: 1px;
-  width: 155vh;
-
+  width: 90%;
 }
 
 main.wrapper {
   background-color: rgb(168, 209, 167);
   overflow: auto;
-  width: 155vh;
+  width: 90%;
 }
 
 body {
@@ -51,20 +50,29 @@ body {
   background-color: rgb(142, 178, 142);
 }
 
+#three {
+  width: 100%;
+  background-color: rgb(142, 178, 142);
+}
+
 h4 {
   margin-top: 2em;
 }
 
 #map {
   margin-top: 2rem;
-  width: 0rem;
+  width: 50rem;
   height: 50rem;
   border-radius: 29em;
 }
 
 h1 {
-  font-family: inherit;
-  font-size: 60px;
+  font-family:inherit;
+  font-size: 6em;
+}
+
+#countDown {
+  font-size: 3em;
 }
 
 .center {
@@ -84,6 +92,7 @@ h1 {
   font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
   font-size: 16px;
   font-weight: 500;
+
   padding: .5rem 1.5rem;
   text-align: center;
   text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
@@ -137,13 +146,15 @@ a:active {
   color: azure;
 }
 
+
+
 #content h1 {
   margin: 30px 0px 40px;
 }
 
 audio {
   margin: 30px 0px;
-  width: 60%;
+  width: 70%;
 }
 
 .card-container .card img {
@@ -155,6 +166,8 @@ audio {
 
 .card-container {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 4rem;
   margin-top: 4rem;
   margin-bottom: 2rem;
@@ -163,7 +176,7 @@ audio {
 .card {
   outline:1px solid rgba(37, 55, 86, .3);
   background-color: rgb(255, 255, 255);
-  border-radius: 10px;
+   border-radius: 10px;
 }
 
 h3 {
@@ -176,23 +189,24 @@ ul {
   text-align: left;
 }
 
+
 #logo {
   width: 1.5rem;
   height: 1.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1rem
 }
 
 .table-container {
+  margin: 0 auto;
+  text-wrap: wrap;
+  display: flex;
+  justify-content: center;
   width: 30%; 
   border-radius: 5px;
-  overflow: hidden;
 }
-
 .table {
   border-radius: 10px; 
-  overflow: hidden; 
 }
-
 table {
   width: 100%;
   border-collapse: collapse;
@@ -211,14 +225,25 @@ th {
   background-color: #e9b581;
 }
 
+
 .rate {
   display: flex;
 }
 
+.clock-border {
+
+  display: flex;
+  flex-direction: row;
+ 
+}
+
 .clock {
+  margin: 0 auto;
+  flex-wrap: wrap;
+  text-wrap: wrap; 
   display: flex; 
   justify-content: center; 
-  align-items: center; 
+  align-items: center;
 }
 
 .clock p {
@@ -226,48 +251,114 @@ th {
   font-size: 30px;
   margin-bottom: 5rem;
   justify-content:center ;
-  background-image: linear-gradient(92.88deg, #9b8668 9)
+  background-image: linear-gradient(92.88deg, #9b8668 9.16%, #80756f 64.72%);
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #ffffff;
+  padding: .5rem 1.5rem;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+  transition: all .5s;
+  user-select: none;
+  -webkit-user-select: none;
+
 }
 
-/* Default styles */
-
-/* Your existing CSS goes here */
-
-/* Media query for screens smaller than 768px (tablets) */
-@media screen and (max-width: 767px) {
-  header {
-    width: 100%; /* Adjust the width of the header for smaller screens */
-  }
-
-  main.wrapper {
-    width: 100%; /* Adjust the width of the main content area for smaller screens */
-  }
-
-  .card-container {
-    flex-direction: column; /* Stack cards vertically for smaller screens */
-    align-items: center; /* Center-align cards for smaller screens */
-    gap: 2rem; /* Decrease the gap between cards for smaller screens */
-  }
+/* TABLET & Phone*/
+@media all and (min-width: 768px) and (max-width: 1200px) {
+  header{
+    border-top-left-radius: 1px;
+    border-top-right-radius: 1px;
+    width: 100%;
   
-  audio {
-    width: 70%; /* Adjust audio player width for smaller screens */
   }
-}
 
-/* Media query for screens between 768px and 1200px (tablets and desktops) */
-@media screen and (min-width: 768px) and (max-width: 1200px) {
-  header {
-    width: 100rem; /* Adjust the width of the header for medium-sized screens */
+  .center {
+    display: flex; 
+    text-align: center; 
   }
 
   main.wrapper {
-    width: 100rem; /* Adjust the width of the main content area for medium-sized screens */
-    margin: auto; /* Center-align the main content area */
+    width: 100%;
+    margin: auto;
+  }
+
+  #map {
+    margin:0 auto;
+    margin-top: 2rem;
+    width: 25rem;
+    height: 25rem;
+    border-radius: 29em;
+  }
+
+  #countDown {
+    font-size: 1.5em;
   }
 
   .card-container {
-    flex-direction: column; /* Stack cards vertically for medium-sized screens */
-    align-items: center; /* Center-align cards for medium-sized screens */
-    gap: 2rem; /* Decrease the gap between cards for medium-sized screens */
+    flex-direction: column;
+    align-items: center; 
+    gap: 2rem; 
+  }
+
+  .card-container .card img {
+    width: 18rem;
+    height: 15rem;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .card {
+    min-width: 10rem;
+  }
+
+}
+
+@media all and (max-width: 768px) {
+  header{
+    border-top-left-radius: 1px;
+    border-top-right-radius: 1px;
+    width: 100%;
+  }
+
+  .center {
+    display: flex; 
+    text-align: center; 
+  }
+
+  main.wrapper {
+    width: 100%;
+    margin: auto;
+  }
+
+  #map {
+    margin:0 auto;
+    margin-top: 2rem;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 29em;
+  }
+
+  #countDown {
+    font-size: 1em;
+  }
+
+  .card-container {
+    flex-direction: column;
+    align-items: center; 
+    gap: 2rem; 
+  }
+
+  .card-container .card img {
+    width: 18rem;
+    height: 15rem;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .card {
+    min-width: 10rem;
   }
 }
+

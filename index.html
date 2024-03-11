@@ -5,16 +5,20 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css"/>
   <!-- Include jQuery -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <!-- Include Google Maps JavaScript API with your API key -->
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARyaKTUxBldfUB_deQ4xLta2nMPdoYe1I&callback=initMap" async defer></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </head>
   <body class="wrapper">
     <header class="title">
-      <nav class="navbar navbar-expand-sm navbar-light bg-light">
+      <nav class="navbar navbar-expand-xl|lg|md|sm navbar-light bg-light">
             <img src="images/hobby.png" alt="Hobbies">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,10 +47,7 @@
                 </li>
             </ul>
         </div>
-    </nav>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        </nav>
     </header>
 
     <main class="wrapper">
@@ -68,10 +69,10 @@
     </section>
 
     <section id="two">
-      <h4 class="central-map">Map to Seattle Central College</h4>
+      <h2 class="central-map">Map to Seattle Central College</h2>
       <div id="map"></div>
 
-      <h2>CountDown til Internships!</h2>
+      <h2 id="countDown">Count Down til Internships!</h2>
       <div class="clock-border">
         <div class="clock">
           <p id="days"></p>
@@ -82,118 +83,118 @@
       </div>
     </section>
 
-      <section id="content">
-        <h2>Our Team</h2>
-
-        <div class="card-container">
-          <div class="card">
-            <a href="Group/Jereck/index.html">
-              <img src="Group/Jereck/images/Jereck.png" alt="Jereck" />
-              <h2>Jereck Orenia</h2>
-              <a href="">
-                <img id="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/72px-LinkedIn_icon.svg.png?20210220164014" alt="Linkin Logo"/></a>
-            </a>
-            <div class="hobbies">
-              <h3>hobbies</h3>
-              <ul class="list">
-                <li>Tennis</li>
-                <li>Photography</li>
-                <li>Cinematography</li>
-                <li>Coding</li>
-              </ul>
+      <section id="three">
+        <section id="content">
+          <h2>Our Team</h2>
+          <div class="card-container">
+            <div class="card">
+              <a href="Group/Jereck/index.html">
+                <img src="Group/Jereck/images/Jereck.png" alt="Jereck" />
+                <h2>Jereck Orenia</h2>
+                <a href="">
+                  <img id="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/72px-LinkedIn_icon.svg.png?20210220164014" alt="Linkin Logo"/></a>
+              </a>
+              <div class="hobbies">
+                <h3>hobbies</h3>
+                <ul class="list">
+                  <li>Tennis</li>
+                  <li>Photography</li>
+                  <li>Cinematography</li>
+                  <li>Coding</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card">
+              <a href="Group/Julie/index.html">
+                <img src="Group/Julie/images/hoolie.jpg" alt="Julie" />
+                <h2>Julie Saelee</h2>
+                <a href=""
+                  ><img
+                    id="logo"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/72px-LinkedIn_icon.svg.png?20210220164014"
+                    alt="Linkin Logo"
+                /></a>
+              </a>
+              <div class="hobbies">
+                <h3>hobbies</h3>
+                <ul class="list">
+                  <li>Roller skating</li>
+                  <li>Cooking</li>
+                  <li>Art</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card">
+              <a href="Group/Sarah/index.html">
+                <img src="Group/Sarah/images/me.jpg" alt="Sarah" />
+                <h2>Sarah Mohamed</h2>
+                <a href=""
+                  ><img
+                    id="logo"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/72px-LinkedIn_icon.svg.png?20210220164014"
+                    alt="Linkin Logo"
+                /></a>
+              </a>
+              <div>
+                <h3>hobbies</h3>
+                <ul class="list">
+                  <li class="list">Painting</li>
+                  <li class="list">Cooking</li>
+                  <li class="list">Going out with friends/family</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card">
+              <a href="Group/Katie/index.html">
+                <img src="Group/Katie/images/IMG_0220.jpg" alt="Katie" />
+                <h2>Katie le</h2>
+                <a href=""
+                  ><img
+                    id="logo"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/72px-LinkedIn_icon.svg.png?20210220164014"
+                    alt="Linkin Logo"
+                /></a>
+              </a>
+              <div class="hobbies">
+                <h3>hobbies</h3>
+                <ul class="list">
+                  <li>Making perlers</li>
+                  <li>Binge watching shows</li>
+                  <li>Gym</li>
+                </ul>
+              </div>
             </div>
           </div>
-          <div class="card">
-            <a href="Group/Julie/index.html">
-              <img src="Group/Julie/images/hoolie.jpg" alt="Julie" />
-              <h2>Julie Saelee</h2>
-              <a href=""
-                ><img
-                  id="logo"
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/72px-LinkedIn_icon.svg.png?20210220164014"
-                  alt="Linkin Logo"
-              /></a>
-            </a>
-            <div class="hobbies">
-              <h3>hobbies</h3>
-              <ul class="list">
-                <li>Roller skating</li>
-                <li>Cooking</li>
-                <li>Art</li>
-              </ul>
-            </div>
-          </div>
-          <div class="card">
-            <a href="Group/Sarah/index.html">
-              <img src="Group/Sarah/images/me.jpg" alt="Sarah" />
-              <h2>Sarah Mohamed</h2>
-              <a href=""
-                ><img
-                  id="logo"
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/72px-LinkedIn_icon.svg.png?20210220164014"
-                  alt="Linkin Logo"
-              /></a>
-            </a>
-            <div>
-              <h3>hobbies</h3>
-              <ul class="list">
-                <li class="list">Painting</li>
-                <li class="list">Cooking</li>
-                <li class="list">Going out with friends/family</li>
-              </ul>
-            </div>
-          </div>
-          <div class="card">
-            <a href="Group/Katie/index.html">
-              <img src="Group/Katie/images/IMG_0220.jpg" alt="Katie" />
-              <h2>Katie le</h2>
-              <a href=""
-                ><img
-                  id="logo"
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/72px-LinkedIn_icon.svg.png?20210220164014"
-                  alt="Linkin Logo"
-              /></a>
-            </a>
-            <div class="hobbies">
-              <h3>hobbies</h3>
-              <ul class="list">
-                <li>Making perlers</li>
-                <li>Binge watching shows</li>
-                <li>Gym</li>
-              </ul>
-            </div>
-          </div>
+        </section>
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Names</th>
+                <th>Favorite Foods</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Jereck</td>
+                <td>Chick-fil-a</td>
+              </tr>
+              <tr>
+                <td>Julie</td>
+                <td>Wendy's</td>
+              </tr>
+              <tr>
+                <td>Sarah</td>
+                <td>Arby's</td>
+              </tr>
+              <tr>
+                <td>Katie</td>
+                <td>KBBQ</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </section>
-
-      <div class="table-container">
-        <table>
-          <thead>
-            <tr>
-              <th>Names</th>
-              <th>Favorite Foods</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Jereck</td>
-              <td>Chick-fil-a</td>
-            </tr>
-            <tr>
-              <td>Julie</td>
-              <td>Wendy's</td>
-            </tr>
-            <tr>
-              <td>Sarah</td>
-              <td>Arby's</td>
-            </tr>
-            <tr>
-              <td>Katie</td>
-              <td>KBBQ</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
       <div class="rate">
         <a href="Group/Rate/index.html" class="rate" role="button">Rate Us</a>
       </div>
