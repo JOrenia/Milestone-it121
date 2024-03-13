@@ -1,0 +1,56 @@
+    
+/* Bootstrap Navbar */
+.navbar-nav .nav-link:hover {
+    color: #5d6270; 
+  }
+  
+  .bg-light {
+    background-color: #d9d9d9 !important;
+  }
+  
+  .navbar-collapse {
+    width: 2%;
+  }
+  
+  header img {
+    width: auto;
+    height: 5vh;
+  }
+
+body {
+    background-color: rgb(77, 74, 90);
+}
+
+h2, label {
+    color: rgb(248, 248, 248);
+}
+
+.button {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* CSS Transition */
+.transition-fade {
+    transition: opacity 1s ease;
+    }
+
+    .fade {
+    opacity: 0;
+    }
+
+    .fade.show {
+    opacity: 1;
+    }
+
+    /* Button Styles */
+    button {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    }
