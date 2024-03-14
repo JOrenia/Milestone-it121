@@ -55,6 +55,15 @@ body {
   background-color: rgb(142, 178, 142);
 }
 
+h1 {
+  font-family:inherit;
+  font-size: 6em;
+}
+
+h2 {
+  margin-top: 1rem;
+}
+
 h4 {
   margin-top: 2em;
 }
@@ -66,13 +75,9 @@ h4 {
   border-radius: 29em;
 }
 
-h1 {
-  font-family:inherit;
-  font-size: 6em;
-}
 
 #countDown {
-  font-size: 3em;
+  font-size: 2em;
 }
 
 .center {
@@ -293,7 +298,7 @@ th {
   }
 
   #countDown {
-    font-size: 1.5em;
+    font-size: 1rem;
   }
 
   .card-container {
