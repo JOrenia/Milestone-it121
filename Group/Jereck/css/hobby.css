@@ -1,0 +1,246 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #343539;
+}
+
+.hobby-wrapper {
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hobby-container {
+    height: 800px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+}
+
+.card {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 90px;
+    border-radius: .75rem;
+    background-size: cover;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 2rem;
+    margin: 1em 10px;
+    display: flex;
+    align-items: flex-end;
+    transition: .6s cubic-bezier(.28,-0.03,0,.99);
+    box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
+}
+
+.row {
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right:28em;
+    margin-bottom:1em;
+}
+
+.card > .row {
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.card > .row .icon {
+    background: #223;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.card > .row > .description {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: rgba(41, 41, 46, 0.46);
+    border-radius: 1em;
+    height: 8em;
+    width: 535px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition-delay: .3s;
+    transition: all .3s ease
+}
+
+.description p {
+    color: #f5f5f5;
+    padding-top: 3px;
+    padding-bottom: .5em;
+}
+
+.description h4 {
+    margin-left: 0.6em;
+    margin-top: 1em;
+    text-transform: uppercase;
+}
+
+input {
+    display: none;
+}
+
+input:checked + label {
+    width: 1200px;
+}
+
+input:checked + label .description {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+
+}
+
+.card[for="c1"] {
+    background-image: url('../images/fish.jpg');
+}
+.card[for="c2"] {
+    background-image: url('../images/japan.jpg');
+}
+.card[for="c3"] {
+    background-image: url('../images/tennis.jpg');
+}
+.card[for="c4"] {
+    background-image: url('../images/coding.jpg');
+}
+
+
+
+/* TABLET view styling*/
+@media all and (min-width:501px) and (max-width:1199px) {
+
+    .hobby-wrapper {
+        width: 100%;
+        height: 40vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 40px;
+        border-radius: .75rem;
+        background-size: cover;
+        cursor: pointer;
+        overflow: hidden;
+        border-radius: 2rem;
+        margin: .3em 4px;
+        display: flex;
+        align-items: flex-end;
+        transition: .6s cubic-bezier(.28,-0.03,0,.99);
+        box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
+    }
+    
+    .hobby-container {
+        height: 350px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: start;
+    }
+
+    input:checked + label {
+        width: 500px;
+    }
+
+    .row {
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-right: -4.5em;
+        margin-bottom:1em;
+    }
+
+    .description p {
+        font-size: 1.5vh;
+        color: #e2e5ea;
+        padding-top: 3px;
+        padding-bottom: 1.5em;
+    }
+    
+    .description h4 {
+        font-size: 2vh;
+        margin-left: 0.6em;
+        margin-top: 2em;
+        text-transform: uppercase;
+    }
+}
+
+/* PHONE view styling*/
+@media all and (max-width:500px) {
+    .hobby-wrapper {
+        width: 100%;
+        height: 40vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 30px;
+        border-radius: .75rem;
+        background-size: cover;
+        cursor: pointer;
+        overflow: hidden;
+        border-radius: 2rem;
+        margin: .1em 1px;
+        display: flex;
+        align-items: flex-end;
+        transition: .6s cubic-bezier(.28,-0.03,0,.99);
+        box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
+    }
+    
+    .hobby-container {
+        height: 250px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: start;
+    }
+
+    input:checked + label {
+        width: 300px;
+    }
+
+    .row {
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-right: -14em;
+        margin-bottom: .2em;
+    }
+    .description h4 {
+        font-size: 2vh;
+        margin-left: 0.6em;
+        margin-top: 2em;
+        text-transform: uppercase;
+    }
+
+    .description p {
+        width: 20em;
+        font-size: 1.3vh;
+        color: #e2e5ea;
+        padding-top: 3px;
+        padding-bottom: .5em;
+    }
+    
+
+}

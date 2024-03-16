@@ -5,23 +5,52 @@
     <title>Jereck Orenia</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/forms.css">
+    <link rel="stylesheet" href="css/hobby.css">
+    <!-- Include jQuery -->
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      </head>
 </head>
-
-<body>
-    <header>
-        <h1 class="page-header"><strong>Jereck Orenia</strong></h1>
-        <nav class="topnav" id="myTopnav">
-            <a href="../../index.html" class="active">Home</a>
-            <a href="https://github.com/JOrenia" target="_blank">GitHub</a>
-            <a href="https://www.linkedin.com/in/jereck-orenia-a13a68296/" target="_blank">LinkedIn</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-        </nav>
-    </header>
-
+<body id="wrapper">
+    <header class="title">
+        <nav class="navbar navbar-expand-xl|lg|md|sm navbar-light bg-light">
+        <img src="../../images/hobby.png" alt="Hobbies">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active">
+                      <a class="nav-link" href="../../index.html">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="../../Group/Katie/index.html">Katie</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="../../Group/Julie/index.html">Julie</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="../../Group/Sarah/index.html">Sarah</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="../../Group/Jereck/index.html">Jereck</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/JOrenia" target="_blank">GitHub</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://www.linkedin.com/in/jereck-orenia-a13a68296/" target="_blank">LinkedIn</a>
+                  </li>
+              </ul>
+          </div>
+          </nav>
+      </header>
     <main class="wrapper">
+        <h1 class="page-header"><strong>Jereck Orenia</strong></h1>
         <picture class="profile">
             <source media="(min-width: 1200px)" srcset="images/tiki.jpg">
             <source media="(min-width: 501px)" srcset="images/Jereck_spiderman.jpg">
@@ -45,6 +74,59 @@
         <p>As I continue to progress on my journey towards becoming a software developer and tester, I hope to continue
             to form new connections and create new memories along the way.</p>
 
+        <div class="empty"></div>
+
+        <blockquote>
+            <br>
+            <hr>
+        </blockquote>
+
+        <h2 class="subheader">Hobbies</h2>
+    <div class="hobby-wrapper">
+        <div class="hobby-container">
+            <input type="radio" name="slide" id="c1" checked>
+            <label for="c1" class="card">
+                <div class="row">
+                    <div class="icon">1</div>
+                    <div class="description">
+                        <h4>Photography</h4>
+                        <p>Freezing moments in time through the lens, immortalizing the beauty of the world.</p>
+                    </div>
+                </div>
+            </label>
+            <input type="radio" name="slide" id="c2">
+            <label for="c2" class="card">
+                <div class="row">
+                    <div class="icon">2</div>
+                    <div class="description">
+                        <h4>Cinematography</h4>
+                        <p>Crafting stories through the artful manipulation of moving images and light, bringing narratives to life on screen.</p>
+                    </div>
+                </div>
+            </label>
+            <input type="radio" name="slide" id="c3">
+            <label for="c3" class="card">
+                <div class="row">
+                    <div class="icon">3</div>
+                    <div class="description">
+                        <h4>Tennis</h4>
+                        <p>A dynamic sport blending agility, strategy, and precision in the pursuit of victory on the court.</p>
+                    </div>
+                </div>
+            </label>
+            <input type="radio" name="slide" id="c4">
+            <label for="c4" class="card">
+                <div class="row">
+                    <div class="icon">4</div>
+                    <div class="description">
+                        <h4>Coding</h4>
+                        <p>Transforming ideas into functional digital realities through the mastery of programming languages and algorithms.</p>
+                    </div>
+                </div>
+            </label>
+        </div>
+    </div>
+
 
         <footer>
             <p><small>&copy; 2021-<span id="this-year"></span> by
@@ -54,7 +136,6 @@
             </p>
         </footer>
     </main>
-
     <!-- Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon -->
     <script>
         //https://tinyurl.com/dynamic-html-checker
@@ -76,7 +157,6 @@
             }
         }   
     </script>
-
 </body>
 
 </html>

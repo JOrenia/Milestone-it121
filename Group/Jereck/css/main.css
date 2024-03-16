@@ -5,47 +5,75 @@
 
 /*Applying css styling to each elements*/
 html {
-    background-color: #1c1e1f;
+    background-color: #414349;
     font-family: 'Nunito', sans-serif;
     font-size: 1.3em;
     line-height: 1.5em;
 }
 
-::selection {
-    color: #000; 
-    background: #ff0;
+/* Bootstrap Navbar */
+.navbar-nav .nav-link:hover {
+    color: #5d6270;
+}
+
+.bg-light {
+    width: 100%;
+    background-color: #756666;
+}
+
+.navbar-collapse {
+    width: 2%;
+}
+header img {
+    width: auto;
+    height: 5vh;
+  }
+
+body #wrapper {
+    color: #414349;
+}
+
+header {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    border-top-left-radius: 1px;
+    border-top-right-radius: 1px;
+    width: 90%;
 }
 
 h1 {
     font-weight: normal;
     margin: auto;
-    background: #f5f1ee;
-    line-height: 2.5em;
+    background: #bdaf9f;
+
 }
 
-h1.page-header{
+h1.page-header {
+    width: 100%;
+    padding-left: .5em;
     font-family: 'Nunito', sans-serif;
 }
 
 main.wrapper {
-    background-color: #f5f1ee
-    ;
-    overflow: auto;
+
+    background-color: #ededf6;
 }
 
 p {
-    margin: 1em; /* Top Right Bottom Left (TRBL) */
+    padding: 0 1em;
 }
 
-h2,h3 {
+h2,
+h3 {
     font-weight: normal;
-    font-size: 3em;
+    font-size: 2em;
     margin-left: 1em;
     line-height: 1em;
 }
 
 a {
-    color:#5c98f3;
+    color: #5c98f3;
     text-decoration: none;
 }
 
@@ -53,6 +81,15 @@ a:hover {
     color: #9aa0a3;
     background-color: #7f7a78;
     text-decoration: none;
+}
+
+.empty {
+    margin: 20vh 80%;
+}
+
+.subheader {
+    display: flex;
+    justify-content: center;
 }
 
 footer {
@@ -66,21 +103,16 @@ footer {
 /* DESKTOP view styling*/
 @media all and (min-width:1200px) {
     main.wrapper {
-        width: 80%;
+        width: 90%;
         margin: auto;
     }
-    
-    h1 {
-        width: 79%;
-        padding-left: 1%;
-    }
-    
+
     picture.profile img {
-        width: 50%;
+        width: 21%;
         float: left;
         margin-right: 2em;
     }
-    
+
 }
 
 /* TABLET view styling*/
@@ -89,16 +121,39 @@ footer {
         width: 90%;
         margin: auto;
     }
-    
+
+    header img {
+        width: auto;
+        height: 5vh;
+      }
+
+    header {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        border-top-left-radius: 1px;
+        border-top-right-radius: 1px;
+        width: 90%;
+    }
+
+    h1.page-header, h2 {
+        font-size: 1.5rem;
+        font-family: 'Nunito', sans-serif;
+    }
+
     h1 {
         width: 89%;
         padding-left: 1%;
     }
-    
+
     picture.profile img {
         width: 50%;
         float: right;
         margin-left: 1em;
+    }
+
+    .empty {
+        margin: 2rem;
     }
 
 }
@@ -108,14 +163,37 @@ footer {
     main.wrapper {
         width: 100%;
     }
-    
+
+    header img {
+        width: auto;
+        height: 2.5em;
+      }
+
+    header {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        border-top-left-radius: 1px;
+        border-top-right-radius: 1px;
+        width: 100%;
+    }
+
+    h1.page-header, h2 {
+        font-size: 1rem;
+        font-family: 'Nunito', sans-serif;
+    }
+
     h1 {
         width: 99%;
         padding-left: 1%;
     }
-    
+
     picture.profile img {
         width: 100%;
     }
-    
+
+    .empty {
+        margin: 1rem;
+    }
+
 }
