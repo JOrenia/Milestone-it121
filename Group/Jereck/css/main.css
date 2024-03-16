@@ -17,8 +17,12 @@ html {
 }
 
 .bg-light {
+    background-color: #ecedee !important;
+}
+
+.bg-light {
     width: 100%;
-    background-color: #756666;
+    background-color: #807373;
 }
 
 .navbar-collapse {
@@ -30,7 +34,7 @@ header img {
   }
 
 body #wrapper {
-    color: #414349;
+    color: #323336;
 }
 
 header {
@@ -50,14 +54,15 @@ h1 {
 }
 
 h1.page-header {
+    color: #1a1b1b;
     width: 100%;
     padding-left: .5em;
     font-family: 'Nunito', sans-serif;
 }
 
 main.wrapper {
-
-    background-color: #ededf6;
+    color: rgb(255, 255, 255);
+    background-color: #7e7e7e;
 }
 
 p {
