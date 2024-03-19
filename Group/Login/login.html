@@ -23,7 +23,7 @@
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
           </button>
-      
+      <!--Nav bar links-->
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ml-auto">
                   <li class="nav-item active">
@@ -51,13 +51,14 @@
           </div>
           </nav>
       </header>
+      <!-- this is a Toggle button that initiates a fade ina fade out animation for the log in contents-->
     <div class="button">
         <button onclick="toggleFade()">Login</button>
     </div>
     <section class="transition-fade fade" id="fadeElement"> 
         <div class="container mt-5">
             <h2>Log-in</h2>
-            <form action="https://postman-echo.com/post" method="POST">
+            <form action="https://postman-echo.com/post" method="POST"> <!-- Once the submit button is pressed with the correct information included, the contents will be be echoed by postman echo -->
             <div class="form-group">
                 <label for="username">Enter Username</label>
                 <input type="text" class="form-control" id="username" name="username" placeholder="Enter username" required>
